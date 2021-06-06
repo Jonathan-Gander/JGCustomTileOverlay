@@ -11,6 +11,6 @@ Cache is stored into `Application Support` directory so it is managed by user. I
 - Import `invalidTile.png` in your project. It is displayed when URL template is invalid.
 
 
-## Any suggestion?
+## Any suggestions?
 
 As this class is used into my production app GPX viewer, be free to contact me if you have any suggestions how to improve it.
