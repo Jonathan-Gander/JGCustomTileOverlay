@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33607072266CCAE700F91282 /* CacheDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33607071266CCAE700F91282 /* CacheDirectoryManager.swift */; };
 		33A32BDC266B8FEF00CDA977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A32BDB266B8FEF00CDA977 /* AppDelegate.swift */; };
 		33A32BDE266B8FEF00CDA977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A32BDD266B8FEF00CDA977 /* SceneDelegate.swift */; };
 		33A32BE0266B8FEF00CDA977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A32BDF266B8FEF00CDA977 /* ViewController.swift */; };
 		33A32BE3266B8FEF00CDA977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A32BE1266B8FEF00CDA977 /* Main.storyboard */; };
 		33A32BE5266B8FF000CDA977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A32BE4266B8FF000CDA977 /* Assets.xcassets */; };
 		33A32BE8266B8FF000CDA977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A32BE6266B8FF000CDA977 /* LaunchScreen.storyboard */; };
+		33A32BF0266B915500CDA977 /* JGCustomTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A32BEF266B915500CDA977 /* JGCustomTileOverlay.swift */; };
+		33A32BF6266BD41900CDA977 /* invalidTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A32BF5266BD41900CDA977 /* invalidTile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33607071266CCAE700F91282 /* CacheDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheDirectoryManager.swift; sourceTree = "<group>"; };
 		33A32BD8266B8FEF00CDA977 /* CustomTileOverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTileOverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A32BDB266B8FEF00CDA977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A32BDD266B8FEF00CDA977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		33A32BE4266B8FF000CDA977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A32BE7266B8FF000CDA977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A32BE9266B8FF000CDA977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A32BEF266B915500CDA977 /* JGCustomTileOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGCustomTileOverlay.swift; sourceTree = "<group>"; };
+		33A32BF5266BD41900CDA977 /* invalidTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invalidTile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				33A32BDB266B8FEF00CDA977 /* AppDelegate.swift */,
 				33A32BDD266B8FEF00CDA977 /* SceneDelegate.swift */,
 				33A32BDF266B8FEF00CDA977 /* ViewController.swift */,
+				33A32BEF266B915500CDA977 /* JGCustomTileOverlay.swift */,
+				33607071266CCAE700F91282 /* CacheDirectoryManager.swift */,
+				33A32BF5266BD41900CDA977 /* invalidTile.png */,
 				33A32BE1266B8FEF00CDA977 /* Main.storyboard */,
 				33A32BE4266B8FF000CDA977 /* Assets.xcassets */,
 				33A32BE6266B8FF000CDA977 /* LaunchScreen.storyboard */,
@@ -127,6 +136,7 @@
 				33A32BE8266B8FF000CDA977 /* LaunchScreen.storyboard in Resources */,
 				33A32BE5266B8FF000CDA977 /* Assets.xcassets in Resources */,
 				33A32BE3266B8FEF00CDA977 /* Main.storyboard in Resources */,
+				33A32BF6266BD41900CDA977 /* invalidTile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A32BF0266B915500CDA977 /* JGCustomTileOverlay.swift in Sources */,
 				33A32BE0266B8FEF00CDA977 /* ViewController.swift in Sources */,
 				33A32BDC266B8FEF00CDA977 /* AppDelegate.swift in Sources */,
 				33A32BDE266B8FEF00CDA977 /* SceneDelegate.swift in Sources */,
+				33607072266CCAE700F91282 /* CacheDirectoryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,15 +298,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 682XXX43G8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomTileOverlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = family.gander.CustomTileOverlay;
+				PRODUCT_BUNDLE_IDENTIFIER = family.gander.customtileoverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +318,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 682XXX43G8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomTileOverlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = family.gander.CustomTileOverlay;
+				PRODUCT_BUNDLE_IDENTIFIER = family.gander.customtileoverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
