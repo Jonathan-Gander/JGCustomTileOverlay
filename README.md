@@ -1,5 +1,5 @@
 # JGCustomTileOverlay
-A custom tile overlay implementation for MKMapKit that uses a local cache to store downloaded tiles. It is used into my app GPX viewer ([link to the App Store](https://apps.apple.com/ch/app/gpx-viewer/id1511582047?l=fr)).
+A custom tile overlay implementation for MKMapKit that uses a local cache to store downloaded tiles. It is used into my app [GPX viewer](https://apps.apple.com/ch/app/gpx-viewer/id1511582047?l=fr).
 
 ## App and classes description
 
@@ -29,4 +29,4 @@ Cache is stored into `Application Support` directory so it is managed by user. I
 
 ## Any suggestions?
 
-As this class is used into my production app GPX viewer, be free to contact me if you have any suggestions how to improve it.
+As this class is used into my production app [GPX viewer](https://apps.apple.com/ch/app/gpx-viewer/id1511582047?l=fr), be free to contact me if you have any suggestions how to improve it.
